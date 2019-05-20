@@ -1,0 +1,55 @@
+<div class="container">
+  <div class="main row">
+    <div class="col-12 text-center"><h4> Calcule su Presupuesto</h4></div>
+  </div>
+  <div class="row">
+    <div class="col-12 text-center"><h5> Solo para servcicios por horas</h5></div>
+  </div>
+  <div class="main row">
+    <div class="col-12 text-center"><app-campos-requeridos></app-campos-requeridos></div>
+  </div>
+
+  <div class="row">
+    <div class="col-6 col-sm-6 align-items-center">
+      <div class="row">
+        <div class="col-4 text-center"><button class="btn btn-warning" (click)="calcularHoras('restar')">-</button>
+        </div>
+        <div class="col-4 text-center col-centered">
+          <p><strong></strong>{{ horas }} </p>
+        </div>
+        <div class="col-4 text-center"><button class="btn btn-warning" (click)="calcularHoras('sumar')">+</button></div>
+
+      </div>
+
+    </div>
+    
+      <div class="col-6 col-sm-6 align-items-center">
+        <div class="row">
+          <div class="col-4 text-center"><button class="btn btn-warning" (click)="calcularDias('restar')">-</button></div>
+        <div class="col-4 text-center col-centered">
+          <p><strong></strong>{{ dias }} </p>
+        </div>
+        <div class="col-4 text-center"><button class="btn btn-warning" (click)="calcularDias('sumar')">+</button></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-12 text-center">Precio por hora: 15$</div>
+  </div>
+  <div class="row">
+    <div class="col-12 text-center">
+      <p>Total semanal:{{ totalSemanal }} $ </p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-12 text-center">
+      <p>Total mensual:{{ totalMensual }}$ </p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-12 text-center">
+      <p> <button class="btn btn-warning">Enviar solicitud</button></p>
+    </div>
+  </div>
+</div>
